@@ -1,24 +1,24 @@
 algoritmo "extra 1"
-// Função : Converter a posição recebida da fileira e poltrona para a posição dentro do vetor
-// Autor :
+// FunÃ§Ã£o : Converter a posiÃ§Ã£o recebida da fileira e poltrona para a posiÃ§Ã£o dentro do vetor
+// Autor : Fernando Alves de Oliveira
 // Data : 31/05/2017
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 var
 fileira   : vetor[1..4,1..3] de inteiro
 conversao : vetor[0..11] de inteiro
 f,c,p,i,j : inteiro
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
 
 escreval("O teatro possui 4 fileiras e 3 poltronas em cada.")
 escreval("--------------------------------------------")
 enquanto (f > 4) ou (c > 3) ou (f < 1) ou (c < 1) faca
-   escreval("Entre com o número da fileira: ")
+   escreval("Entre com o nÃºmero da fileira: ")
    leia(f)
    escreval("Entre com a poltrona da fileira",f,": ")
    leia(c)
    se (f > 4) ou (c > 3) ou (f < 1) ou (c < 1) entao
-      escreval("NÚMERO DE FILEIRA E/OU POLTRONA INCORRETO!")
+      escreval("NÃšMERO DE FILEIRA E/OU POLTRONA INCORRETO!")
    fimse
 fimenquanto
 escreval()
@@ -36,7 +36,7 @@ escreval("--------------------------------------------")
 escreval()
 
 conversao[p] <- p
-escreval("Visão do vetor:")
+escreval("VisÃ£o do vetor:")
 para i de 0 ate 11 faca
    escreva(conversao[i])
 fimpara
@@ -47,9 +47,9 @@ escreval("--------------------------------------------")
 escreval()
 
 fileira[f,c] <- p
-escreval("Visão pela matriz(teatro) e com o valor")
-escreval("convertido(valor do vetor) na posição da")
-escreval("fileira e posição da poltrona:")
+escreval("VisÃ£o pela matriz(teatro) e com o valor")
+escreval("convertido(valor do vetor) na posiÃ§Ã£o da")
+escreval("fileira e posiÃ§Ã£o da poltrona:")
 escreval()
 para i de 1 ate 4 faca
    para j de 1 ate 3 faca
