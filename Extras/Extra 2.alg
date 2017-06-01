@@ -1,8 +1,8 @@
 algoritmo "Extra 2"
-// Função : Trabalhar com o vetor e funções
-// Autor :
+// FunÃ§Ã£o : Trabalhar com o vetor e funÃ§Ãµes
+// Autor : Fernando Alves de Oliveira
 // Data : 29/05/2017
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 var
 numeros :vetor[0..5] de inteiro
 i,opcao : inteiro
@@ -10,7 +10,7 @@ sair : caractere
 procedimento lerVetor()
 inicio
 para i de 0 ate 5 faca
-   escreva("Entre com o",(i+1),"º número: ")
+   escreva("Entre com o",(i+1),"Âº nÃºmero: ")
    leia(numeros[i])
 fimpara
 escreval()
@@ -21,7 +21,7 @@ inicio
 escreval("VALORES DO VETOR")
 escreval("---------------------")
 para i de 0 ate 5 faca
-   escreval("Índice.:",i)
+   escreval("Ãndice.:",i)
    escreval("Valor..:",numeros[i])
    escreval("---------------------")
 fimpara
@@ -30,11 +30,11 @@ fimprocedimento
 
 procedimento listarPares()
 inicio
-escreval("NÚMEROS PARES DO VETOR")
+escreval("NÃšMEROS PARES DO VETOR")
 escreval("---------------------")
 para i de 0 ate 5 faca
    se (numeros[i] mod 2 = 0) entao
-      escreval("Índice.:",i)
+      escreval("Ãndice.:",i)
       escreval("Valor..:",numeros[i])
       escreval("---------------------")
    fimse
@@ -44,11 +44,11 @@ fimprocedimento
 
 procedimento listarImpares()
 inicio
-escreval("NÚMEROS IMPARES DO VETOR")
+escreval("NÃšMEROS IMPARES DO VETOR")
 escreval("---------------------")
 para i de 0 ate 5 faca
    se (numeros[i] mod 2 <> 0) entao
-      escreval("Índice.:",i)
+      escreval("Ãndice.:",i)
       escreval("Valor..:",numeros[i])
       escreval("---------------------")
    fimse
@@ -81,17 +81,17 @@ retorne quantidade
 fimfuncao
 
 inicio
-// Seção de Comandos
+// SeÃ§Ã£o de Comandos
 enquanto sair <> "S" faca
    limpatela
-   escreval("Entre com a opção desejada: ")
+   escreval("Entre com a opÃ§Ã£o desejada: ")
    escreval()
-   escreval("1 - Ler números inteiros e armazená-los no vetor")
-   escreval("2 - Listar todos os números")
+   escreval("1 - Ler nÃºmeros inteiros e armazenÃ¡-los no vetor")
+   escreval("2 - Listar todos os nÃºmeros")
    escreval("3 - Listar todos os pares")
-   escreval("4 - Listar todos os ímpares")
-   escreval("5 - Exibir a quantidade de números pares existem nas posições ímpares do vetor")
-   escreval("6 - Exibir a quantidade de números ímpares existem nas posições pares do vetor")
+   escreval("4 - Listar todos os Ã­mpares")
+   escreval("5 - Exibir a quantidade de nÃºmeros pares existem nas posiÃ§Ãµes Ã­mpares do vetor")
+   escreval("6 - Exibir a quantidade de nÃºmeros Ã­mpares existem nas posiÃ§Ãµes pares do vetor")
    escreval("7 - Sair")
    escreva("> ")
    leia(opcao)
@@ -107,9 +107,9 @@ enquanto sair <> "S" faca
    caso 4
       listarImpares()
    caso 5
-      escreval("Quantidade de números pares nas posições impares: ",qtdParesPosImpares())
+      escreval("Quantidade de nÃºmeros pares nas posiÃ§Ãµes impares: ",qtdParesPosImpares())
    caso 6
-      escreval("Quantidade de números impares nas posições pares: ",qtdImparesPosPares())
+      escreval("Quantidade de nÃºmeros impares nas posiÃ§Ãµes pares: ",qtdImparesPosPares())
    caso 7
       sair <- "S"
    fimescolha
