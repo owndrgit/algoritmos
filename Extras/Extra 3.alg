@@ -1,33 +1,33 @@
 algoritmo "Extra 3"
-// FunÁ„o : ler o Ìndice de poluiÁ„o medido e emitir a notificaÁ„o adequada aos diferentes grupos de empresas
-// Autor :
+// Fun√ß√£o : ler o √≠ndice de polui√ß√£o medido e emitir a notifica√ß√£o adequada aos diferentes grupos de empresas
+// Autor : Fernando Alves de Oliveira
 // Data : 31/05/2017
-// SeÁ„o de DeclaraÁıes
+// Se√ß√£o de Declara√ß√µes
 var
 indicePoluente : real
 sair : caractere
 inicio
-// SeÁ„o de Comandos
+// Se√ß√£o de Comandos
 enquanto sair <> "s" faca
-   escreval("Bem-vindo ao software de an·lise de Õndice Poluente!")
+   escreval("Bem-vindo ao software de an√°lise de √çndice Poluente!")
    escreval("")
-   escreva("Entre com o Ìndice de poluiÁ„o para ser feita a an·lise: ")
+   escreva("Entre com o √≠ndice de polui√ß√£o para ser feita a an√°lise: ")
    leia(indicePoluente)
    escreval()
    se indicePoluente < 0.3 entao
-      escreval("ÕNDICE DE POLUI«√O ACEIT¡VEL")
-      escreval("Nenhuma ind˙stria precisar· suspender suas atividades.")
+      escreval("√çNDICE DE POLUI√á√ÉO ACEIT√ÅVEL")
+      escreval("Nenhuma ind√∫stria precisar√° suspender suas atividades.")
    senao
       se indicePoluente = 0.3 entao
-         escreval("ÕNDICE DE POLUI«√O ACIMA DO ACEIT¡VEL!")
-         escreval("As industrias do 1∫ grupo ser„o intimadas a suspenderem suas atividades.")
+         escreval("√çNDICE DE POLUI√á√ÉO ACIMA DO ACEIT√ÅVEL!")
+         escreval("As industrias do 1¬∫ grupo ser√£o intimadas a suspenderem suas atividades.")
       senao
          se indicePoluente = 0.4 entao
-            escreval("ÕNDICE DE POLUI«√O ACIMA DO ACEIT¡VEL!")
-            escreval("As industrias do 1∫ e 2∫ grupo ser„o intimadas a suspenderem suas atividades.")
+            escreval("√çNDICE DE POLUI√á√ÉO ACIMA DO ACEIT√ÅVEL!")
+            escreval("As industrias do 1¬∫ e 2¬∫ grupo ser√£o intimadas a suspenderem suas atividades.")
          senao
-            escreval("ÕNDICE DE POLUI«√O ACIMA DO ACEIT¡VEL!")
-            escreval("Todas as industrias ser„o intimadas a suspenderem suas atividades.")
+            escreval("√çNDICE DE POLUI√á√ÉO ACIMA DO ACEIT√ÅVEL!")
+            escreval("Todas as industrias ser√£o intimadas a suspenderem suas atividades.")
          fimse
       fimse
    fimse
